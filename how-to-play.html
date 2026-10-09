@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<!--hreflang-->
+<link rel="alternate" hreflang="en-GB" href="https://beequation.com/how-to-play.html">
+<link rel="alternate" hreflang="fr" href="https://fr.beequation.com/how-to-play.html">
+<link rel="alternate" hreflang="es" href="https://es.beequation.com/how-to-play.html">
+<link rel="alternate" hreflang="de" href="https://de.beequation.com/how-to-play.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pt.beequation.com/how-to-play.html">
+<link rel="alternate" hreflang="x-default" href="https://beequation.com/how-to-play.html">
+<!--/hreflang-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Comment jouer à Beequation : règles, exemples et astuces</title>
+<meta name="description" content="Comment jouer à Beequation, le jeu de calcul mental : trouvez le nombre que deux autres forment en s’additionnant ou en se multipliant. Règles, exemples et astuces.">
+<link rel="canonical" href="https://fr.beequation.com/how-to-play.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Beequation">
+<meta property="og:title" content="Comment jouer à Beequation : règles, exemples et astuces">
+<meta property="og:description" content="Comment jouer à Beequation, le jeu de calcul mental : trouvez le nombre que deux autres forment en s’additionnant ou en se multipliant. Règles, exemples et astuces.">
+<meta property="og:url" content="https://fr.beequation.com/how-to-play.html">
+<meta property="og:image" content="https://beequation.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Beequation : trouvez le nombre formé par deux autres. Une grille en alvéoles où 14 + 6 = 20.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="theme-color" content="#12161F">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+:root {
+  --ground: #EEF1F5; --card: #FFFFFF; --ink: #12161F; --mute: #5B6474; --line: #E3E7EE;
+  --cobalt: #2B50E8; --honey: #FFB020; --honey-ink: #12161F;
+  --night: #12161F; --night-cell: #222938; --night-ink: #F2F4F8; --night-mute: #9AA3B2;
+  --sky: #EAF6FF; --grape: #6A4BF5; --grape-lip: #3B24A8; --kid-ink: #1C1A4A; --kid-soft: #5A5688;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #0F131A; --card: #1A2030; --ink: #F2F4F8; --mute: #9AA3B2; --line: #2A3142; --cobalt: #7D95FF; }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 18px/1.55 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+a { color: var(--cobalt); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, .cell:focus-visible { outline: 3px solid var(--honey); outline-offset: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.top { display: flex; align-items: center; gap: 22px; padding: 18px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 21px; letter-spacing: -0.4px; color: inherit; text-decoration: none; flex: 1; }
+.hex { width: 24px; height: 28px; background: var(--honey); clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); flex: none; }
+.top a:not(.brand) { color: inherit; text-decoration: none; font-weight: 500; }
+.top a:not(.brand):hover { color: var(--honey); }
+.top a { white-space: nowrap; }
+@media (max-width: 640px) { .top { flex-wrap: wrap; gap: 6px 20px; } .top .brand { flex-basis: 100%; margin-bottom: 4px; } }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 22px; border-radius: 16px; font-weight: 700; font-size: 17px; text-decoration: none; border: 0; cursor: pointer; font-family: inherit; }
+.btn.honey { background: var(--honey); color: var(--honey-ink); }
+.btn.plain { background: var(--card); color: var(--ink); box-shadow: inset 0 0 0 2px var(--line); }
+.doc { max-width: 720px; padding: 40px 0 20px; }
+.doc h1 { font-size: clamp(38px, 6vw, 56px); line-height: 1.02; letter-spacing: -2px; margin: 0 0 18px; }
+.doc h2 { font-size: 21px; margin: 30px 0 6px; }
+.doc p { margin: 0 0 12px; }
+footer { margin-top: 80px; padding: 32px 0 48px; border-top: 1px solid var(--line); font-size: 15px; color: var(--mute); }
+footer .cols { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; margin-bottom: 14px; }
+footer a { color: var(--mute); }
+footer a:hover { color: var(--ink); }
+.lang { position: relative; } .lang summary { list-style: none; cursor: pointer; font-weight: 600; padding: 3px 10px; border-radius: 10px; box-shadow: inset 0 0 0 1.5px var(--line); } .lang summary::-webkit-details-marker { display: none; } .lang .langs { position: absolute; right: 0; top: calc(100% + 6px); background: var(--card); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.18); padding: 6px; display: grid; min-width: 150px; z-index: 20; } .lang .langs a { padding: 8px 12px; border-radius: 8px; } .lang .langs a:hover { background: var(--ground); } .lang .langs a[aria-current] { font-weight: 700; }
+</style>
+
+</head>
+<body>
+<div class="wrap"><nav class="top" aria-label="Principal"><a class="brand" href="/"><span class="hex" aria-hidden="true"></span>Beequation</a><a href="/#apps">Apps</a><a href="/how-to-play.html">Comment jouer</a><a href="/support.html">Aide</a><!--lang-menu--><details class="lang"><summary aria-label="Langue">FR</summary><div class="langs"><a href="https://beequation.com/how-to-play.html?lang=en" lang="en" hreflang="en" data-lang="en">English</a><a href="https://fr.beequation.com/how-to-play.html" lang="fr" hreflang="fr" data-lang="fr" aria-current="true">Français</a><a href="https://es.beequation.com/how-to-play.html" lang="es" hreflang="es" data-lang="es">Español</a><a href="https://de.beequation.com/how-to-play.html" lang="de" hreflang="de" data-lang="de">Deutsch</a><a href="https://pt.beequation.com/how-to-play.html" lang="pt" hreflang="pt" data-lang="pt">Português</a></div></details><!--/lang-menu--></nav></div>
+<main class="wrap"><div class="doc"><h1>Comment jouer à Beequation</h1>
+<p>Chaque énigme Beequation est un petit groupe d’alvéoles avec des nombres. <b>Un seul</b> de ces nombres est formé à partir de deux autres. Trouvez-le et touchez-le.</p>
+<h2>Les additions</h2>
+<p>Dans la plupart des énigmes, le nombre à trouver est la <b>somme</b> de deux autres. Dans cette grille, 7 + 5 = 12 : c’est donc 12 qu’il faut toucher.</p>
+<svg viewBox="0 0 118 170" width="118" height="170" role="img" aria-label="Exemple de grille : 7, 3, 12, 5 et 11. La réponse est 12, car 7 plus 5 font 12." style="display:block;margin:18px 0;max-width:100%;height:auto;font-family:inherit"><polygon points="29.4,2.0 57.1,18.0 57.1,50.0 29.4,66.0 1.8,50.0 1.8,18.0" fill="#4A3A17"/><text x="29.4" y="43.0" text-anchor="middle" font-size="24" font-weight="700" fill="#FFD27A">7</text><polygon points="88.3,2.0 116.0,18.0 116.0,50.0 88.3,66.0 60.7,50.0 60.7,18.0" fill="#222938"/><text x="88.3" y="43.0" text-anchor="middle" font-size="24" font-weight="700" fill="#F2F4F8">3</text><polygon points="58.9,53.0 86.6,69.0 86.6,101.0 58.9,117.0 31.2,101.0 31.2,69.0" fill="#FFB020"/><text x="58.9" y="94.0" text-anchor="middle" font-size="24" font-weight="700" fill="#12161F">12</text><polygon points="29.4,104.0 57.1,120.0 57.1,152.0 29.4,168.0 1.8,152.0 1.8,120.0" fill="#4A3A17"/><text x="29.4" y="145.0" text-anchor="middle" font-size="24" font-weight="700" fill="#FFD27A">5</text><polygon points="88.3,104.0 116.0,120.0 116.0,152.0 88.3,168.0 60.7,152.0 60.7,120.0" fill="#222938"/><text x="88.3" y="145.0" text-anchor="middle" font-size="24" font-weight="700" fill="#F2F4F8">11</text></svg>
+<h2>Les tables de multiplication</h2>
+<p>Dans les énigmes de tables (le Jardin des Tables dans Beequation Kids, les Tables dans Beequation), le nombre est le <b>produit</b> de deux autres. Ici, 4 × 6 = 24.</p>
+<svg viewBox="0 0 118 170" width="118" height="170" role="img" aria-label="Exemple de grille : 4, 9, 24, 6 et 15. La réponse est 24, car 4 fois 6 font 24." style="display:block;margin:18px 0;max-width:100%;height:auto;font-family:inherit"><polygon points="29.4,2.0 57.1,18.0 57.1,50.0 29.4,66.0 1.8,50.0 1.8,18.0" fill="#4A3A17"/><text x="29.4" y="43.0" text-anchor="middle" font-size="24" font-weight="700" fill="#FFD27A">4</text><polygon points="88.3,2.0 116.0,18.0 116.0,50.0 88.3,66.0 60.7,50.0 60.7,18.0" fill="#222938"/><text x="88.3" y="43.0" text-anchor="middle" font-size="24" font-weight="700" fill="#F2F4F8">9</text><polygon points="58.9,53.0 86.6,69.0 86.6,101.0 58.9,117.0 31.2,101.0 31.2,69.0" fill="#FFB020"/><text x="58.9" y="94.0" text-anchor="middle" font-size="24" font-weight="700" fill="#12161F">24</text><polygon points="29.4,104.0 57.1,120.0 57.1,152.0 29.4,168.0 1.8,152.0 1.8,120.0" fill="#4A3A17"/><text x="29.4" y="145.0" text-anchor="middle" font-size="24" font-weight="700" fill="#FFD27A">6</text><polygon points="88.3,104.0 116.0,120.0 116.0,152.0 88.3,168.0 60.7,152.0 60.7,120.0" fill="#222938"/><text x="88.3" y="145.0" text-anchor="middle" font-size="24" font-weight="700" fill="#F2F4F8">15</text></svg>
+<h2>Astuces pour le repérer vite</h2>
+<p><b>Commencez par les grands nombres.</b> Dans une addition, la réponse est souvent l’un des plus grands nombres, puisqu’elle est formée en additionnant deux autres.</p>
+<p><b>Pensez pair et impair.</b> Un total impair demande un nombre pair et un nombre impair. Deux nombres impairs, ou deux nombres pairs, donnent toujours un total pair.</p>
+<p><b>Regardez le dernier chiffre.</b> Si le candidat finit par 2, cherchez deux nombres dont les derniers chiffres font 2 ou 12, comme 7 et 5.</p>
+<p><b>Pour les tables, pensez aux diviseurs.</b> Quels nombres divisent exactement le candidat ? 24 peut être 4 × 6, 3 × 8 ou 2 × 12.</p>
+<p><b>Éliminez des nombres.</b> Le plus petit nombre ne peut presque jamais être la somme de deux autres : vous pouvez généralement l’ignorer.</p>
+<h2>La Grande Ruche</h2>
+<p>La Grande Ruche est une énigme faite d’énigmes. Vous résolvez quatre petits groupes, et leurs quatre réponses forment un dernier groupe, à résoudre en dernier.</p>
+<h2>Les niveaux</h2>
+<p><b>Beequation Kids</b> (de 5 à 12 ans) compte six mondes et 35 niveaux : Prairie des Additions, Jardin des Tables, Forêt des Fractions, Ville des Dizaines (dizaines et centaines), Dunes Décimales (dixièmes et centièmes) et Grande Ruche. Tally l’abeille donne un indice quand votre enfant bloque, et les étoiles comptent les indices et les erreurs avec douceur, sans chrono.</p>
+<p><b>Beequation</b> (ados et adultes) compte 64 niveaux, d’Œuf à Esprit de ruche, en additions, tables, négatifs, fractions, décimaux et mixte, plus le Trio, où un nombre est la somme de trois autres, un nouveau Défi du jour chaque jour et un blitz de 60 secondes. Le mode difficile ne vous laisse qu’un essai par grille.</p>
+<p><a class="btn honey" href="https://beequation.com/play.html" style="margin-top:14px">Jouer gratuitement dans le navigateur</a></p>
+</div></main><div class="wrap"><footer>
+  <div class="cols">
+    <a class="brand" href="/" style="flex:none;color:var(--ink)"><span class="hex" aria-hidden="true"></span>Beequation</a>
+    <a href="https://beequation.com/play.html">Jouer en ligne</a><a href="/about.html">À propos</a><a href="/support.html">Aide</a><a href="/privacy.html">Confidentialité</a><a href="/terms.html">Conditions</a>
+    <a href="https://www.facebook.com/beequationapp">Facebook</a><a href="https://www.instagram.com/beequationapp">Instagram</a><a href="https://www.tiktok.com/@beequationapp">TikTok</a><a href="https://www.youtube.com/@beequationapp">YouTube</a><a href="https://x.com/beequationapp">X</a>
+  </div>
+  <p style="margin:0">Beequation est créé par Trett Labs Limited, société immatriculée en Angleterre et au pays de Galles sous le numéro 17310137. Siège social : The 1812 Building, Wheatley Park, Mirfield, West Yorkshire, WF14 8HE, Royaume-Uni. Contact : <a href="mailto:hello@beequation.com">hello@beequation.com</a>. © 2026 Trett Labs Limited.</p>
+</footer></div>
+</body></html>
